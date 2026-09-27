@@ -1,7 +1,7 @@
 # Nexus Idle RPG Foundation Design
 
 Date: 2026-09-26
-Status: Design approved in chat; written-spec review pending
+Status: Approved by owner for implementation planning on 2026-09-26
 Repository: `alfred092020-ux/nexus-idle-rpg`
 Target integration branch: `feat/idle-rpg-foundation`
 
