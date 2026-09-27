@@ -19,6 +19,13 @@ class ApkCompatibilityTests(unittest.TestCase):
         self.assertIn("ScriptingImplementation.IL2CPP", text)
         self.assertIn("SetScriptingBackend", text)
 
+    def test_android_build_enables_both_input_backends_for_ui(self):
+        build = Path("client/Assets/Editor/NexusAndroidBuild.cs")
+        text = build.read_text()
+        self.assertIn("ConfigureInputBackends()", text)
+        self.assertIn('"activeInputHandler"', text)
+        self.assertIn("inputHandler.intValue = 2", text)
+
     def test_android_build_entry_point_exists(self):
         build = Path("client/Assets/Editor/NexusAndroidBuild.cs")
         self.assertTrue(build.exists(), "Android build entry point is missing")

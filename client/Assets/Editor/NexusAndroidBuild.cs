@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using UnityEditor;
 using UnityEditor.Build.Reporting;
 
@@ -29,6 +30,7 @@ public static class NexusAndroidBuild
             throw new InvalidOperationException("No enabled scenes are configured for the build.");
         }
 
+        ConfigureInputBackends();
         EditorUserBuildSettings.buildAppBundle = false;
         PlayerSettings.SetScriptingBackend(BuildTargetGroup.Android, ScriptingImplementation.IL2CPP);
         PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64;
@@ -47,6 +49,27 @@ public static class NexusAndroidBuild
                 $"Android build failed: {report.summary.result} ({report.summary.totalErrors} errors)."
             );
         }
+    }
+
+    private static void ConfigureInputBackends()
+    {
+        var getter = typeof(PlayerSettings)
+            .GetMethods(BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic)
+            .FirstOrDefault(method =>
+                method.Name == "GetSerializedObject" && method.GetParameters().Length == 0);
+        if (getter == null || !(getter.Invoke(null, null) is SerializedObject settings))
+        {
+            throw new InvalidOperationException("Unable to access serialized PlayerSettings.");
+        }
+
+        settings.Update();
+        SerializedProperty inputHandler = settings.FindProperty("activeInputHandler");
+        if (inputHandler == null)
+        {
+            throw new InvalidOperationException("PlayerSettings.activeInputHandler is unavailable.");
+        }
+        inputHandler.intValue = 2; // Both: legacy Input Manager + new Input System.
+        settings.ApplyModifiedProperties();
     }
 
     private static string GetArgument(string name)
