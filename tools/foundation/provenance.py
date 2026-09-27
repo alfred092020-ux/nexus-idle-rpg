@@ -21,6 +21,12 @@ def _git(repo_root: Path, *args: str) -> subprocess.CompletedProcess[str]:
 
 def load_pin(path: Path) -> UpstreamPin:
     data = json.loads(path.read_text())
+    imported_at = data.get("imported_at")
+    upstream_merges = data.get("upstream_merges")
+    if not isinstance(imported_at, str) or not imported_at.strip():
+        raise ValueError("provenance imported_at must be a non-empty string")
+    if not isinstance(upstream_merges, list):
+        raise ValueError("provenance upstream_merges must be a list")
     return UpstreamPin(data["repo_url"], data["branch"], data["commit"], data["code_license"])
 
 

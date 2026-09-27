@@ -26,7 +26,8 @@ class ProvenanceTests(unittest.TestCase):
     def write_pin(self, path: Path, repo_url: str, commit: str):
         path.write_text(json.dumps({
             "repo_url": repo_url, "branch": "main", "commit": commit,
-            "code_license": "Apache-2.0", "unity_version": "2021.3.26f1"
+            "code_license": "Apache-2.0", "unity_version": "2021.3.26f1",
+            "imported_at": "2026-09-27", "upstream_merges": []
         }))
 
     def test_load_pin_parses_exact_values(self):
@@ -34,6 +35,17 @@ class ProvenanceTests(unittest.TestCase):
             path = Path(td) / "pin.json"
             self.write_pin(path, "https://example.invalid/repo.git", "a" * 40)
             self.assertEqual(load_pin(path), UpstreamPin("https://example.invalid/repo.git", "main", "a" * 40, "Apache-2.0"))
+
+    def test_load_pin_requires_import_and_merge_traceability_metadata(self):
+        with tempfile.TemporaryDirectory() as td:
+            path = Path(td) / "pin.json"
+            path.write_text(json.dumps({
+                "repo_url": "https://example.invalid/repo.git",
+                "branch": "main", "commit": "a" * 40,
+                "code_license": "Apache-2.0", "unity_version": "2021.3.26f1"
+            }))
+            with self.assertRaises(ValueError):
+                load_pin(path)
 
     def test_verify_pin_accepts_ancestor_and_expected_remote(self):
         with tempfile.TemporaryDirectory() as td:

@@ -3,5 +3,7 @@
   "branch": "main",
   "commit": "116227e448b8ba375fb4aef80db6dafa33232909",
   "code_license": "Apache-2.0",
-  "unity_version": "2021.3.26f1"
+  "unity_version": "2021.3.26f1",
+  "imported_at": "2026-09-27",
+  "upstream_merges": []
 }
