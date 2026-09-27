@@ -131,3 +131,4 @@ client/ProjectSettings/ProjectSettings.asset
 curse_of_myrra.code-workspace
 
 .nexus/deps/
+artifacts/foundation/
