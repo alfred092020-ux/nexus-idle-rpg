@@ -1,0 +1,487 @@
+{
+  "dependencies": [
+    {
+      "name": "com.coffee.ui-particle",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UPSTREAM_LICENSE_REVIEW",
+      "expected_path": null
+    },
+    {
+      "name": "com.github-glitchenzo.nugetforunity",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UPSTREAM_LICENSE_REVIEW",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.2d.pixel-perfect",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.2d.sprite",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.2d.tilemap",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.addressables",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.ads",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.analytics",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.cinemachine",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.collab-proxy",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.connect.share",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.feature.development",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.ide.rider",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.ide.visualstudio",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.ide.vscode",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.inputsystem",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.mobile.android-logcat",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.nuget.newtonsoft-json",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.postprocessing",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.purchasing",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.render-pipelines.universal",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.test-framework",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.textmeshpro",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.timeline",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.ugui",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.visualeffectgraph",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.visualscripting",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.xr.legacyinputhelpers",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "xyz.candycoded.hapticfeedback",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UPSTREAM_LICENSE_REVIEW",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.ai",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.androidjni",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.animation",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.assetbundle",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.audio",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.cloth",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.director",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.imageconversion",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.imgui",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.jsonserialize",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.particlesystem",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.physics",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.physics2d",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.screencapture",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.terrain",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.terrainphysics",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.tilemap",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.ui",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.uielements",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.umbra",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.unityanalytics",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.unitywebrequest",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.unitywebrequestassetbundle",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.unitywebrequestaudio",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.unitywebrequesttexture",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.unitywebrequestwww",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.vehicles",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.video",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.vr",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.wind",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "com.unity.modules.xr",
+      "kind": "upm",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": null
+    },
+    {
+      "name": "RPG & MMO UI 6",
+      "kind": "asset",
+      "required": true,
+      "license_state": "ASSET_STORE_LICENSE_REVIEW",
+      "expected_path": "client/Assets/ThirdParty/RPG & MMO UI 6"
+    },
+    {
+      "name": "Map Maker",
+      "kind": "asset",
+      "required": true,
+      "license_state": "ASSET_STORE_LICENSE_REVIEW",
+      "expected_path": "client/Assets/ThirdParty/Map Maker"
+    },
+    {
+      "name": "RPG inventory icons",
+      "kind": "asset",
+      "required": true,
+      "license_state": "ASSET_STORE_LICENSE_REVIEW",
+      "expected_path": "client/Assets/ThirdParty/RPG inventory icons"
+    },
+    {
+      "name": "Basic RPG Icons",
+      "kind": "asset",
+      "required": true,
+      "license_state": "ASSET_STORE_LICENSE_REVIEW",
+      "expected_path": "client/Assets/ThirdParty/Basic RPG Icons"
+    },
+    {
+      "name": "Resource Vector Graphics",
+      "kind": "asset",
+      "required": true,
+      "license_state": "ASSET_STORE_LICENSE_REVIEW",
+      "expected_path": "client/Assets/UI/Resource Vector Graphics"
+    },
+    {
+      "name": "DOTween",
+      "kind": "asset",
+      "required": true,
+      "license_state": "ASSET_STORE_LICENSE_REVIEW",
+      "expected_path": "client/Assets/Plugins/Demigiant/DOTween"
+    },
+    {
+      "name": "Gold Mining Game",
+      "kind": "asset",
+      "required": true,
+      "license_state": "ASSET_STORE_LICENSE_REVIEW",
+      "expected_path": "client/Assets/ThirdParty/Gold Mining Game"
+    },
+    {
+      "name": "UX Flat Icons",
+      "kind": "asset",
+      "required": true,
+      "license_state": "ASSET_STORE_LICENSE_REVIEW",
+      "expected_path": "client/Assets/ThirdParty/UX Flat Icons"
+    },
+    {
+      "name": "TextMeshPro",
+      "kind": "asset",
+      "required": true,
+      "license_state": "UNITY_PACKAGE_TERMS",
+      "expected_path": "client/Assets/TextMesh Pro"
+    }
+  ]
+}
