@@ -12,6 +12,13 @@ class ApkCompatibilityTests(unittest.TestCase):
         self.assertIn("public float fillAmount", text)
         self.assertNotIn("RPG & MMO UI 6", text)
 
+    def test_android_build_targets_arm64_with_il2cpp(self):
+        build = Path("client/Assets/Editor/NexusAndroidBuild.cs")
+        text = build.read_text()
+        self.assertIn("AndroidArchitecture.ARM64", text)
+        self.assertIn("ScriptingImplementation.IL2CPP", text)
+        self.assertIn("SetScriptingBackend", text)
+
     def test_android_build_entry_point_exists(self):
         build = Path("client/Assets/Editor/NexusAndroidBuild.cs")
         self.assertTrue(build.exists(), "Android build entry point is missing")

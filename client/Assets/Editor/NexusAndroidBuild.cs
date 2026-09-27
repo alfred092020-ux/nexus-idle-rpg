@@ -30,6 +30,8 @@ public static class NexusAndroidBuild
         }
 
         EditorUserBuildSettings.buildAppBundle = false;
+        PlayerSettings.SetScriptingBackend(BuildTargetGroup.Android, ScriptingImplementation.IL2CPP);
+        PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64;
         var options = new BuildPlayerOptions
         {
             scenes = scenes,
